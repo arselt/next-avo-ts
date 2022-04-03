@@ -9,13 +9,12 @@ const HomePage = () => {
       .fetch('api/avo')
       .then((response) => response.json())
       .then(({ data, length }) => {
-          setProductList(data)
+        setProductList(data)
       })
   }, [])
 
   return (
     <div>
-      <Navbar />
       <h1>Hello Next.js ❎</h1>
       {productList.map((product) => (
         <li>
