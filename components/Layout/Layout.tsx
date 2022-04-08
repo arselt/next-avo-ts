@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from 'components/Navbar'
+import Infobar from 'components/Infobar'
 
 const Layout: React.FC = ({ children }) => {
     return (
         <div>
             <Navbar />
             {children}
-            <footer> this is a footer </footer>
+            <Infobar />
         </div>
     )
 }

@@ -1,24 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
     return (
-        <div>
+        <header className={styles.header}>
             <nav>
-				<ul>
-                    <li>
+                <ul className={styles.ul}>
+                    <li className={styles.li}>
                         <Link href='/'>
-                            <a>Home</a>
+                            <a className={styles.a}>🥑 Next Avo</a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href='/about'>
-                            <a>About</a>
-                        </Link>
+                    <li className={styles.li}>
+                        <a className={styles.a} href='https://arselt.com' target='_blank'>🌐 Arselt.com</a>
                     </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     );
 }
 

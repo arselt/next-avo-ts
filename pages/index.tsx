@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   const [productList, setProductList] = useState<TProduct[]>([]);
@@ -19,7 +18,7 @@ const HomePage = () => {
       {productList.map((product) => (
         <li>
           <a href={`/product/${product.id}`}>{product.name}</a>
-        </li>
+        </li> // TODO: make a component that receives this info inside of it
       ))}
     </div>
   );
